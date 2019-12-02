@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="test@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.7">
+    <root id="1">
+      <DefaultCasing>lower/lower</DefaultCasing>
+    </root>
+    <schema id="2" parent="1" name="band3"/>
+    <schema id="3" parent="1" name="band4"/>
+    <schema id="4" parent="1" name="band5"/>
+    <schema id="5" parent="1" name="db_student"/>
+    <schema id="6" parent="1" name="db_studentinfo"/>
+    <schema id="7" parent="1" name="fff"/>
+    <schema id="8" parent="1" name="information_schema"/>
+    <schema id="9" parent="1" name="mysql"/>
+    <schema id="10" parent="1" name="paper"/>
+    <schema id="11" parent="1" name="student"/>
+    <schema id="12" parent="1" name="test">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <table id="13" parent="12" name="user"/>
+    <column id="14" parent="13" name="user">
+      <Position>1</Position>
+      <DataType>VARCHAR(10)|12</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="15" parent="13" name="pd">
+      <Position>2</Position>
+      <DataType>VARCHAR(10)|12</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <key id="16" parent="13" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>user</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
